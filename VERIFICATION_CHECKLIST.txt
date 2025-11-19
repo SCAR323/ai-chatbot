@@ -1,0 +1,130 @@
+═══════════════════════════════════════════════════════════════════
+                   VERIFICATION CHECKLIST
+═══════════════════════════════════════════════════════════════════
+
+Before starting, verify you have:
+
+BEFORE STARTING:
+□ Node.js installed (check: node --version, npm --version)
+□ VS Code installed and project folder open
+□ Project folder contains: src/, server/, package.json
+□ Internet connection (for Supabase database)
+
+DURING SETUP:
+
+Step 1: Install Dependencies
+□ Command: npm install
+□ Result: "added X packages" message
+□ Time: 2-5 minutes
+□ Status: _______________
+
+Step 2: Install Backend Dependencies  
+□ Command: cd server && npm install && cd ..
+□ Result: "added X packages" message
+□ Time: 1-2 minutes
+□ Status: _______________
+
+DURING RUNNING:
+
+Terminal 1 - Backend Server:
+□ Command: cd server && npm start
+□ Expected message: "Server running on http://localhost:5000"
+□ Status: ✓ Running / ✗ Error
+□ Error (if any): ____________________
+
+Terminal 2 - Frontend Server:
+□ Command: npm run dev
+□ Expected message: "ready in XXX ms"
+□ Expected URL: "http://localhost:5173"
+□ Status: ✓ Running / ✗ Error
+□ Error (if any): ____________________
+
+WEBSITE VERIFICATION:
+
+Browser Tests:
+□ Website loads at http://localhost:5173
+□ Can see products
+□ Navigation bar works
+□ Homepage loads
+□ Can click Products
+□ Can see different categories
+□ Can search products
+□ Can view product details
+
+Chatbot Tests:
+□ Chat button visible (bottom-right corner)
+□ Can click chat button
+□ Chat window opens
+□ Can type a message
+□ Chat sends message
+□ Bot responds
+□ No errors in browser console (F12)
+
+Feature Tests:
+□ Can navigate to About page
+□ Can navigate to Contact page
+□ Can navigate to FAQ page
+□ Can click Compare Products
+□ Can select products to compare
+□ Compare table displays
+
+DATABASE TESTS:
+□ Products load from Supabase
+□ Categories display correctly
+□ Product details show specs
+□ Product ratings show
+□ FAQs load on FAQ page
+
+═══════════════════════════════════════════════════════════════════
+
+FINAL STATUS:
+
+All checks passed? YES / NO
+
+If YES: 
+  🎉 YOUR SETUP IS COMPLETE!
+  You can now:
+  - Browse products
+  - Use chat bot
+  - Make code changes (they appear automatically)
+  - Deploy to production
+
+If NO:
+  ❌ Something needs fixing
+  See: COMMON_ISSUES.md
+  Or: SETUP_GUIDE.md troubleshooting
+
+═══════════════════════════════════════════════════════════════════
+
+QUICK FIXES:
+
+"npm: command not found"
+→ Install Node.js from nodejs.org
+
+"Port already in use"
+→ Kill existing process or change port number
+
+"Cannot find module"
+→ Run npm install again
+
+"Chatbot not working"
+→ Check if backend (Terminal 1) is running
+
+"Website not loading"
+→ Check if frontend (Terminal 2) is running
+
+"Blank page"
+→ Refresh browser (F5)
+→ Check browser console (F12)
+
+═══════════════════════════════════════════════════════════════════
+
+SUPPORT FILES:
+
+📄 COPY_PASTE_COMMANDS.md     - Just copy & paste these commands
+📄 SETUP_GUIDE.md              - Detailed step-by-step guide
+📄 VISUAL_GUIDE.md             - Pictures and diagrams
+📄 COMMON_ISSUES.md            - Problems and solutions
+📄 PROJECT_README.md           - Full project documentation
+
+═══════════════════════════════════════════════════════════════════
